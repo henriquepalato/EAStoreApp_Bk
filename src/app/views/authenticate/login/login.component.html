@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-center align-items-center w-100 h-100 login-container">
+
+  <div class="col-xl-4 col-md-6 col-12">
+    <div class="card border-0 box-shadow rounded-2 bg-light">
+      <div class="card-header d-flex justify-content-center align-items-center border-0 box-shadow bg-info">
+        <i class="fa fa-sign-in" aria-hidden="true"></i>
+      </div>
+      <div class="card-body text-center pb-1">
+        <h2>Member login</h2>
+        <a routerLink="/register" class="transition">Ainda nãe e cadastrado? Crie uma conta!</a>
+
+        <form class="text-left mt-4">
+          <div class="form-group">
+            <div class="col-md-10 offset-md-1">
+              <label> Email </label>
+              <input class="form-control validation-field" placeholder="Email" type="text">
+              <!-- <small class="text-danger" >Email is required</small>
+                                <small class="text-danger" >Invalid email address</small> -->
+            </div>
+
+          </div>
+          <div class="form-group">
+            <div class="col-md-10 offset-md-1">
+              <label> Senha </label>
+              <input class="form-control validation-field" placeholder="Password" type="password">
+              <!-- <small class="text-danger">Password is required</small>
+                            <small class="text-danger">Password isn't long enough, minimum of 6 characters</small> -->
+            </div>
+          </div>
+          <div class="form-group d-flex justify-content-between">
+            <div class="col-md-10 offset-md-1">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="login-checkbox">
+                <label class="custom-control-label" for="login-checkbox">Manter conectado.</label>
+              </div>
+
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-10 offset-md-1">
+              <button class="btn btn-success" type="submit">Acessar</button>
+              <a class="transition pull-right" href="javascript:void(0);">Esqueceu a senha?</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-center bg-transparent">
+      </div>
+    </div>
+  </div>
+</div>

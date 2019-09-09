@@ -1,0 +1,19 @@
+.loginPanel
+{
+  margin-top: 50%-38%  !important;
+}
+
+.login-container{
+  position: absolute;
+  .card{
+      .card-header{
+          width: 80px;
+          height: 80px;
+          margin: 0 auto;
+          margin-top: -40px;
+          border-radius: 50%;
+          font-size: 36px;
+      }
+  }
+}
+
