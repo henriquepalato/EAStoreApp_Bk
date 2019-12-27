@@ -1,13 +1,13 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light backgroundMenu p-0">
     <div class="container">
-      <a class="navbar-brand h1 mb-0 mt-0" href="">eBolsa</a>
+      <a class="navbar-brand h1 mb-0 mt-0" href="">@Store</a>
       <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse show" id="menu" [ngClass]="{ 'show': navbarOpen }">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="">Home</a>
           </li>
           <li class="nav-item">
@@ -21,20 +21,18 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Contatos</a>
-          </li>
+          </li> -->
           <div class="btn-group" dropdown>
             <button dropdownToggle type="button" class="btn backgroundMenu dropdown-toggle"
-                    aria-controls="dropdown-basic">
-              Menu <span class="caret"></span>
+              aria-controls="dropdown-basic">
+              Cadastros <span class="caret"></span>
             </button>
-            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
-                role="menu" aria-labelledby="button-basic">
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
               <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
               <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
               <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
               <li class="divider dropdown-divider"></li>
-              <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-              </li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
             </ul>
           </div>
         </ul>
@@ -47,14 +45,9 @@
           <span class="d-none d-sm-inline-block">
             <app-user-menu></app-user-menu>
           </span>
-          <span class="d-none d-sm-inline-block">
-
-            <i class="fa fa-sign-out" aria-hidden="true"></i>
-
-          </span>
           <span class="pl-2 pr-2">
             <a routerLink="/login">
-              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <i class="fa fa-sign-out" style="color: black;" aria-hidden="true"></i>
             </a>
           </span>
         </div>
@@ -72,7 +65,7 @@
 
   <nav class="navbar fixed-bottom navbar-light backgroundMenu p-0">
     <div class="container">
-      <h5>eBolsa</h5>
+      <h5>@Store</h5>
     </div>
   </nav>
 </body>
