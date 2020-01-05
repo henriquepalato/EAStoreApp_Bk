@@ -5,7 +5,7 @@ import { AuthenticateViewComponent } from './core/components/authenticate-view/a
 import { AdminViewComponent } from './core/components/admin-view/admin-view.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 
-const routes: Routes = [
+const appRoutes: Routes = [
   {
     path: '',
     component: AdminViewComponent,
@@ -16,6 +16,10 @@ const routes: Routes = [
       {
         path: 'dashboard', component: DashboardComponent
       },
+      {
+        path: 'categories',
+        loadChildren: './views/management/category/category.module#CategoryModule'
+      }
     ]
   },
   {
@@ -42,7 +46,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { AuthenticateViewComponent } from './components/authenticate-view/authenticate-view.component';
 import { AdminViewModule } from './components/admin-view/admin-view.module';
+import { CategoryModule } from '../views/management/category/category.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AdminViewModule } from './components/admin-view/admin-view.module';
   imports: [
     CommonModule,
     RouterModule,
-    AdminViewModule
+    AdminViewModule,
+    CategoryModule
   ]
 })
 export class CoreModule { }

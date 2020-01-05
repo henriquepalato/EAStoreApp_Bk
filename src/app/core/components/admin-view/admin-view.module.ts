@@ -8,7 +8,6 @@ import { AdminViewComponent } from './admin-view.component';
 import { UserMenuComponent } from './../structure/user-menu/user-menu.component';
 import { FullScreenComponent } from './../structure/fullscreen/fullscreen.component';
 
-
 @NgModule({
   declarations: [AdminViewComponent, UserMenuComponent, FullScreenComponent],
   imports: [
